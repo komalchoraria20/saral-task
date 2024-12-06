@@ -1,0 +1,47 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+form {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+input {
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+button {
+    padding: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #000000;
+}
+
+button:hover {
+    background-color: #000000;
+    color: #ffffff
+}
+
+span {
+    margin-top: 16px;
+    color: #4242a3;
+    font-size: 16px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+span.show {
+    opacity: 1;
+    transform: translateY(0);
+}
